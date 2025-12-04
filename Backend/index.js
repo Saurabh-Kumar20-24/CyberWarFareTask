@@ -4,7 +4,8 @@ import userRouter from './routes/user.route.js'
 import courseRouter from './routes/course.route.js'
 import subscriptionRouter from './routes/subscription.route.js'
 import cors from 'cors'
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
+
 dotenv.config()
 
 const app = express();

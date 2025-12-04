@@ -3,7 +3,7 @@ import { seedCourses } from "../utils/seedCourses.js";
 
 const connectDb = async ()=>{
     try {
-        await mongoose.connect("mongodb+srv://hp14spocox2_db_user:oEWxXFjsTESQlSdo@cluster0.3rkz8zr.mongodb.net/")
+        await mongoose.connect(process.env.MONGO_URI)
         console.log('db conn');
         await seedCourses();
     } catch (error) {
