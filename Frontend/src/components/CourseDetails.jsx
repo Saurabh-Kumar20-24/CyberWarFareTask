@@ -118,7 +118,7 @@ const CourseDetail = () => {
               ₹
               {promoApplied
                 ? `${discountedPrice} (After Discount)`
-                : course.price}
+                : course.price} <span className="text-gray-500">(PromoCode- BFSALE25)</span>
             </span>
           )}
         </div>
