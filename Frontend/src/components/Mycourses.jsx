@@ -18,7 +18,7 @@ const MyCourses = () => {
     const fetchMyCourses = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8000/subscription/my-courses",
+          "https://cyber-war-fare-task-zuaj.vercel.app/subscription/my-courses",
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),

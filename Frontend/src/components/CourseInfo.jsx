@@ -16,7 +16,7 @@ const CourseInfo = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/course/${id}`, {
+        const res = await axios.get(`https://cyber-war-fare-task-zuaj.vercel.app/course/${id}`, {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },

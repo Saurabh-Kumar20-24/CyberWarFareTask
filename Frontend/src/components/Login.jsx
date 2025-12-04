@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/auth/login", form);
+      const res = await axios.post("https://cyber-war-fare-task-zuaj.vercel.app/auth/login", form);
 
       // Save JWT Token
       localStorage.setItem("token", res.data.token);

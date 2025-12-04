@@ -21,7 +21,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/auth/signup", form);
+      const res = await axios.post("https://cyber-war-fare-task-zuaj.vercel.app/auth/signup", form);
       toast.success("Signup successful! Please login.", { autoClose: 3000 });
       setTimeout(() => navigate("/"), 1500);
     } catch (err) {

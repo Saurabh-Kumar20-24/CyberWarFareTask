@@ -24,7 +24,7 @@ const CourseDetail = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/course/${id}`, {
+        const res = await axios.get(`https://cyber-war-fare-task-zuaj.vercel.app/course/${id}`, {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
@@ -57,7 +57,7 @@ const CourseDetail = () => {
   const handleSubscribe = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8000/subscription/subscribe",
+        "https://cyber-war-fare-task-zuaj.vercel.app/subscription/subscribe",
         {
           courseId: course._id,
           promoCode: promoApplied ? "BFSALE25" : "",
